@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Registeration</title>
+        <link rel="icon" href="register-glyph-black-icon-vector-removebg-preview.png">
+        <link rel="stylesheet" href="rstyles.css">
+    </head>
+    <body>
+        <h1 style="color: yellow;">KickStart with an existing course</h1>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="emailId">Enter your Email Id</label><br>
+            <input type="email" id="emailId" name="emailId" required><br><br>
+            
+            <label for="course">Choose a course</label><br>
+            <select name="courseName" id="course" required>
+                <option value="">-- Select a course --</option>
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Python for ML">Python for ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

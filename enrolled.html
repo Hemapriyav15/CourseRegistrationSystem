@@ -1,0 +1,40 @@
+<html>
+    <link rel="icon" href="enroll.png">
+    <title>Enrollment</title>
+    <head>
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            table{
+                border-radius: 10px;
+            }
+            td{
+                background-color: aliceblue;
+            }
+            body{
+                padding: 50px;
+            }
+        </style>
+        <script type="text/javascript" src="myscript.js"></script>
+        
+    </head>
+    <body>
+        <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color:lightblue">
+                <th width="100">Name</th>
+                <th width="150">Email Id</th>
+                <th width="150">Course Name</th>
+            </tr>
+            <tbody id="enrolledtable">
+            </tbody> <!--table body where rows will be inserted -->
+        </table>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showEnrolledStudents();
+
+            }
+        </script>
+    </body>
+</html>
