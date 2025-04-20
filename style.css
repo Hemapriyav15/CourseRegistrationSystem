@@ -1,0 +1,236 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lobster", sans-serif;
+}
+
+body {
+    background-color: #021336;
+    color: #d1c7c7;
+    padding: 0px;
+    font-size: large;
+}
+/* Header Section Styling */
+header {
+    background-color: #333;    /* Background color for header */
+    height: 80px;             /* Set header height to 100px */
+    display: flex;             /* Use flexbox for header layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;       /* Vertically center the logo and navbar */
+    padding: 0 20px;           /* Optional: Add padding to header for spacing */
+}
+
+/* Logo Section */
+.logo img {
+    height: 150px;              /* Adjust logo size */
+    width: auto;               /* Maintain aspect ratio */
+}
+
+/* Navigation Section */
+nav ul {
+    display: flex;             /* Align nav items horizontally */
+    list-style-type: none;     /* Remove default bullet points */
+    margin: 0;                 /* Remove default margin */
+    padding: 0;                /* Remove padding */
+}
+
+nav ul li {
+    margin-left: 20px;         /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;     /* Remove underlines from links */
+    color: white;              /* Set text color to white */
+    font-size: large;           /* Set font size for nav items */
+    font-weight: bold;         /* Make the text bold */
+}
+
+nav ul li a:hover {
+    color: #f0a500;            /* Hover color */
+    transition: color 0.3s;    /* Smooth transition on hover */
+}
+
+
+/* Home Section Styling */
+#home {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Image Scroll Container */
+.image-scroll-container {
+    display: flex;                  /* Aligns images horizontally */
+    overflow-x: scroll;             /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;  /* Makes the scroll snap to each image */
+    gap: 10px;                      /* Adds space between images */
+    padding: 0 20px;                /* Adds some padding for better visual */
+    width: 100%;                    /* Full-width container */
+}
+
+.image-item {
+    flex-shrink: 0;                 /* Prevents shrinking of images */
+    width: 60vw;                   /* Makes each image take the full viewport width */
+    height: 60vh;                  /* Makes each image take the full viewport height */
+    scroll-snap-align: start;       /* Aligns each image to the start of the container when snapped */
+}
+
+.scroll-image {
+    width: 100%;                    /* Ensures image takes full width of the container */
+    height: 100%;                   /* Ensures image takes full height of the container */
+    object-fit: cover;              /* Ensures the image covers the container without distortion */
+    border-radius: 10px;            /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+
+section {
+    background-color: rgb(245, 237, 237);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005b99;
+}
+
+.quick-buttons a {
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Container to hold all the courses in a row */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+    justify-content: space-around;
+    gap: 20px; /* Adds space between course items */
+    padding: 20px;
+}
+
+/* Styling each course item */
+.course-item {
+    text-align: center;
+    width: 200px; /* Fixed width for each course item */
+    margin-bottom: 10px; /* Space below each item */
+    transition: transform 0.3s ease;
+}
+
+/* Course image styling */
+.course-image {
+    width: 100%;
+    height:200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Course name styling */
+.course-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Hover effect for course item */
+.course-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#quick {
+    text-align: center;
+    padding: 20px;
+}
+
+#quick .course-item {
+    display: inline-block; /* To align items side by side */
+    width: 250px; /* Control width of each item */
+    margin: 10px; /* Space between items */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quick .course-item img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+#quick .course-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#quick .course-item button:hover {
+    background-color: #45a049;
+}
+#available-courses h2{
+    text-align: center;
+}
+#upcoming-courses h2{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
